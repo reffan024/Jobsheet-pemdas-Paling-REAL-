@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+ 
+/* ---------- Theme colors (light is default) ---------- */
+:root {
+    --bg: #f4f7f6;
+    --text: #333333;
+    --heading: #2c3e50;
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+    --skill-bg: #e3faf2;
+    --skill-text: #0ca678;
+    --btn-bg: #2c3e50;
+    --btn-text: #ffffff;
+}
+ 
+/* Dark: system preference, unless the user forced light */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg: #1a1a1a;
+        --text: #f5f5f5;
+        --heading: #ffffff;
+        --card-bg: #2d2d2d;
+        --card-border: #444444;
+        --card-shadow: rgba(0, 0, 0, 0.3);
+        --skill-bg: #1e3d37;
+        --skill-text: #12b886;
+        --btn-bg: #f4f7f6;
+        --btn-text: #1a1a1a;
+    }
+}
+ 
+/* Dark: user forced dark */
+:root[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --text: #f5f5f5;
+    --heading: #ffffff;
+    --card-bg: #2d2d2d;
+    --card-border: #444444;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --skill-bg: #1e3d37;
+    --skill-text: #12b886;
+    --btn-bg: #f4f7f6;
+    --btn-text: #1a1a1a;
+}
+ 
+/* ---------- Base ---------- */
+body {
+    background-color: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+ 
+h1, h2, h3 {
+    color: var(--heading);
+}
+ 
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+ 
+.toggle-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+ 
+.btn-toggle {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-family: inherit;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+ 
+.btn-toggle:hover {
+    opacity: 0.85;
+}
+ 
+.cv-card {
+    background-color: var(--card-bg);
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+ 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+ 
+.skill-item {
+    flex: 1;
+    min-width: 120px;
+    background-color: var(--skill-bg);
+    color: var(--skill-text);
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+ 
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+    body {
+        padding: 10px;
+    }
+    .cv-card {
+        padding: 15px;
+    }
+}

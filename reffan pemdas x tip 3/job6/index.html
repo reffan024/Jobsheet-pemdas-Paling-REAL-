@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reffan — Junior Web Developer</title>
+    <meta name="description" content="Portfolio of Reffan, a junior web developer and vocational school student in Jakarta.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="wrap nav">
+        <a href="#top" class="logo">reffan<span>.dev</span></a>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode">◐</button>
+        </div>
+    </nav>
+</header>
+
+<main id="top">
+
+    <!-- HERO -->
+    <section class="hero wrap">
+        <p class="eyebrow mono"><span class="pulse"></span> Available for internships &amp; small projects</p>
+        <h1>Hi, I'm <span class="accent">Reffan</span>.<br>I build things<br>for the web.</h1>
+        <div class="hero-bottom">
+            <p class="lead">Junior web developer and vocational school student in Jakarta. I like turning ideas into clean, responsive pages — one commit at a time.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">See my work →</a>
+                <a href="#contact" class="btn btn-ghost">Contact me</a>
+            </div>
+        </div>
+        <div class="code-card mono" aria-hidden="true">
+            <div class="code-bar"><i></i><i></i><i></i><span>reffan.js</span></div>
+<pre><code><span class="c-k">const</span> <span class="c-v">reffan</span> = {
+  role:     <span class="c-s">"Junior Web Developer"</span>,
+  school:   <span class="c-s">"SMK Strada Jakarta"</span>,
+  stack:    [<span class="c-s">"HTML5"</span>, <span class="c-s">"CSS3"</span>, <span class="c-s">"JavaScript"</span>, <span class="c-s">"Git"</span>],
+  learning: <span class="c-s">"something new every week"</span>
+};</code></pre>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section wrap">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">01</span>
+            <h2>About</h2>
+        </div>
+        <div class="about-grid">
+            <div class="reveal">
+                <p>I'm a vocational high school student who loves anything with a bit of technology in it. I enjoy learning new things and solving problems through code.</p>
+                <p>Right now I'm focused on the fundamentals — semantic HTML, solid CSS layouts, and JavaScript that does one thing well. I care about pages that look good on a phone as much as on a laptop.</p>
+            </div>
+            <ul class="facts reveal">
+                <li><span class="mono">Based in</span><b>Jakarta, Indonesia</b></li>
+                <li><span class="mono">Studying</span><b>SMK Strada Jakarta</b></li>
+                <li><span class="mono">Focus</span><b>Front-end basics</b></li>
+                <li><span class="mono">Status</span><b>Learning &amp; building</b></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section wrap">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">02</span>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill reveal" data-level="4">
+                <div class="skill-top"><h3>HTML5</h3><span class="dots" aria-label="Level 4 of 5"></span></div>
+                <p>Semantic structure, forms, accessibility basics.</p>
+            </div>
+            <div class="skill reveal" data-level="4">
+                <div class="skill-top"><h3>CSS3 Layouting</h3><span class="dots" aria-label="Level 4 of 5"></span></div>
+                <p>Flexbox, grid, variables, light &amp; dark themes.</p>
+            </div>
+            <div class="skill reveal" data-level="4">
+                <div class="skill-top"><h3>Responsive Design</h3><span class="dots" aria-label="Level 4 of 5"></span></div>
+                <p>Mobile-first thinking and media queries.</p>
+            </div>
+            <div class="skill reveal" data-level="3">
+                <div class="skill-top"><h3>JavaScript</h3><span class="dots" aria-label="Level 3 of 5"></span></div>
+                <p>DOM manipulation, events, small interactive features.</p>
+            </div>
+            <div class="skill reveal" data-level="3">
+                <div class="skill-top"><h3>Git &amp; GitHub</h3><span class="dots" aria-label="Level 3 of 5"></span></div>
+                <p>Commits, branches, pushing projects online.</p>
+            </div>
+            <div class="skill reveal" data-level="2">
+                <div class="skill-top"><h3>UI Design</h3><span class="dots" aria-label="Level 2 of 5"></span></div>
+                <p>Still growing: layout, colour and typography.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section wrap">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">03</span>
+            <h2>Projects</h2>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+            <button class="chip active" data-filter="all" type="button">All</button>
+            <button class="chip" data-filter="web" type="button">Web</button>
+            <button class="chip" data-filter="design" type="button">Design</button>
+            <button class="chip" data-filter="school" type="button">School</button>
+        </div>
+
+        <!-- Replace titles, text and links with your real projects -->
+        <ul class="proj-list" id="projList">
+            <li class="proj reveal" data-cat="web">
+                <span class="proj-year mono">2026</span>
+                <div class="proj-body">
+                    <h3>Personal CV Website</h3>
+                    <p>A responsive one-page CV with a light/dark theme toggle.</p>
+                </div>
+                <span class="proj-tags mono">HTML · CSS · JS</span>
+                <a href="#" class="proj-link" aria-label="Open Personal CV Website">↗</a>
+            </li>
+            <li class="proj reveal" data-cat="web">
+                <span class="proj-year mono">2026</span>
+                <div class="proj-body">
+                    <h3>Landing Page Practice</h3>
+                    <p>A mobile-first landing page built to practise flexbox and grid.</p>
+                </div>
+                <span class="proj-tags mono">HTML · CSS</span>
+                <a href="#" class="proj-link" aria-label="Open Landing Page Practice">↗</a>
+            </li>
+            <li class="proj reveal" data-cat="design">
+                <span class="proj-year mono">2026</span>
+                <div class="proj-body">
+                    <h3>Logo &amp; Colour Study</h3>
+                    <p>A small branding exercise exploring colour palettes and type pairs.</p>
+                </div>
+                <span class="proj-tags mono">Design</span>
+                <a href="#" class="proj-link" aria-label="Open Logo and Colour Study">↗</a>
+            </li>
+            <li class="proj reveal" data-cat="school">
+                <span class="proj-year mono">2026</span>
+                <div class="proj-body">
+                    <h3>School Class Project</h3>
+                    <p>A team assignment at SMK Strada Jakarta. Describe your role here.</p>
+                </div>
+                <span class="proj-tags mono">Teamwork</span>
+                <a href="#" class="proj-link" aria-label="Open School Class Project">↗</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap">
+        <div class="sec-head reveal">
+            <span class="sec-num mono">04</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="reveal">
+                <p class="big">Have a project, an internship, or just a question? Send me a message.</p>
+                <ul class="facts">
+                    <li><span class="mono">Email</span><b><a href="mailto:reffanramadan2010@gmail.com">reffanramadan2010@gmail.com</a></b></li>
+                    <li><span class="mono">Location</span><b>Jakarta, Indonesia</b></li>
+                </ul>
+            </div>
+            <form id="contactForm" class="reveal" novalidate>
+                <div class="field">
+                    <label for="cf-name" class="mono">Name</label>
+                    <input id="cf-name" name="name" type="text" required autocomplete="name">
+                </div>
+                <div class="field">
+                    <label for="cf-email" class="mono">Email</label>
+                    <input id="cf-email" name="email" type="email" required autocomplete="email">
+                </div>
+                <div class="field">
+                    <label for="cf-message" class="mono">Message</label>
+                    <textarea id="cf-message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="submit-row">
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <span id="formMsg" class="mono" role="status" aria-live="polite"></span>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="wrap footer mono">
+    <span>© 2026 Reffan</span>
+    <span>Built with HTML, CSS &amp; JavaScript</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
